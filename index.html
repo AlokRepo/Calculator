@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Calculator</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="screen" id="screen">0</div>
+        <div class="button-grid">
+            <button class="button" onclick="appendValue('7')">7</button>
+            <button class="button" onclick="appendValue('8')">8</button>
+            <button class="button" onclick="appendValue('9')">9</button>
+            <button class="button" onclick="setOperation('/')">&divide;</button>
+
+            <button class="button" onclick="appendValue('4')">4</button>
+            <button class="button" onclick="appendValue('5')">5</button>
+            <button class="button" onclick="appendValue('6')">6</button>
+            <button class="button" onclick="setOperation('*')">&times;</button>
+
+            <button class="button" onclick="appendValue('1')">1</button>
+            <button class="button" onclick="appendValue('2')">2</button>
+            <button class="button" onclick="appendValue('3')">3</button>
+            <button class="button" onclick="setOperation('-')">&minus;</button>
+
+            <button class="button" onclick="clearScreen()">C</button>
+            <button class="button" onclick="appendValue('0')">0</button>
+            <button class="button" onclick="calculate()">=</button>
+            <button class="button" onclick="setOperation('+')">+</button>
+        </div>
+
+        <div class="color-toggle">
+            <div class="color-option" style="background: #4CAF50;" onclick="changeTheme('#4CAF50', '#FFFFFF', '#F0F0F0')"></div>
+            <div class="color-option" style="background: #2196F3;" onclick="changeTheme('#2196F3', '#FFFFFF', '#E3F2FD')"></div>
+            <div class="color-option" style="background: #FFC107;" onclick="changeTheme('#FFC107', '#FFFFFF', '#FFF8E1')"></div>
+            <div class="color-option" style="background: #F44336;" onclick="changeTheme('#F44336', '#FFFFFF', '#FFEBEE')"></div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
